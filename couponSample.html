@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Coupon Sample</title>
+	<style>
+	body {
+	font-size: 84%;
+	font-family:arial,sans-serif;
+	margin: 0;
+	padding: 10px;
+	}
+	</style>
+	</head>
+	<body>
+		<h2>Coupon Sample</h2>
+		<a href="https://github.com/m-as/couponManagment.git">m-as: couponManagment</a>
+
+		<script type="text/javascript" src="couponManagment.js"></script>
+		<script type="text/javascript" src="https://raw.github.com/m-as/contentManagment/master/contentManagment.js"></script>
+			<script>
+			//setting up the coupon
+			var c = CouponManagment.coupon({
+			id: 'sampleCoupon',
+			image: 'images/leafs.jpg',
+			width: 590,
+			height: 280,
+			href: 'http://google.com',
+			overlay: 1,
+			overlayClose: 1
+			});
+			//activating the Coupon
+			CouponManagment.createCoupon(c);
+		</script>
+	</body>
+</html>
